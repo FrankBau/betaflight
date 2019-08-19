@@ -16,7 +16,7 @@ endif
 # silently ignore if the file is not present. Allows for target defaults.
 -include $(ROOT)/src/main/target/$(BASE_TARGET)/target.mk
 
-F4_TARGETS      := $(F405_TARGETS) $(F411_TARGETS) $(F446_TARGETS)
+F4_TARGETS      := $(F401_TARGETS) $(F405_TARGETS) $(F411_TARGETS) $(F446_TARGETS)
 F7_TARGETS      := $(F7X2RE_TARGETS) $(F7X5XE_TARGETS) $(F7X5XG_TARGETS) $(F7X5XI_TARGETS) $(F7X6XG_TARGETS)
 H7_TARGETS      := $(H743xI_TARGETS) $(H750xB_TARGETS)
 
