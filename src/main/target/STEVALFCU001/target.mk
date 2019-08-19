@@ -1,13 +1,11 @@
-F405_TARGETS    += $(TARGET)
+F411_TARGETS    += $(TARGET)
 
-FEATURES       += VCP ONBOARDFLASH
+FLASH_SIZE = 256
 
-FLASH_SIZE  = 256
+FEATURES        += VCP 
 
-# FEATURE_CUT_LEVEL = 9
-
-# XXX Remove fake drivers for final production
 TARGET_SRC = \
-            drivers/accgyro/accgyro_fake.c \
-            drivers/barometer/barometer_lps.c \
-            drivers/compass/compass_lis3mdl.c \
+            drivers/accgyro/accgyro_spi_l3gd20.c \
+            drivers/accgyro_legacy/accgyro_lsm303dlhc.c \
+            drivers/compass/compass_hmc5883l.c 
+
