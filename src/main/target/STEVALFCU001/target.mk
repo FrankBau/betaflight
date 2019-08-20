@@ -1,6 +1,7 @@
 F401_TARGETS    += $(TARGET)
 
-FLASH_SIZE = 256
+# FLASH_SIZE = 256 but this overflows for DEBUG=GDB build
+FLASH_SIZE = 128
 
 FEATURES        += VCP 
 

@@ -119,3 +119,5 @@
 #undef USE_TELEMETRY
 #undef USE_LED_STRIP
 #undef USE_DSHOT
+#undef USE_RANGEFINDER
+
