@@ -20,13 +20,13 @@
 
 #pragma once
 
-#define TARGET_BOARD_IDENTIFIER "S411" // STM Discovery F411
-#define USBD_PRODUCT_STRING     "STM32F411DISCOVERY"
+#define TARGET_BOARD_IDENTIFIER "FCU1" // STM Discovery F411
+#define USBD_PRODUCT_STRING     "STEVALFCU001"
 
 #define USE_SENSOR_NAMES
 
-#define LED0_PIN                PB5 // Blue
-#define LED1_PIN                PB4 // Orange
+#define LED0_PIN                PB5 // Red
+#define LED1_PIN                PB4 // Red
 
 #undef USE_BEEPER
 //#define BEEPER_PIN              PD12 // Green LED
@@ -115,9 +115,11 @@
 #define USED_TIMERS             ( TIM_N(1) | TIM_N(2) | TIM_N(3) | TIM_N(4) )
 
 /// flash size reduction
-
 #undef USE_TELEMETRY
 #undef USE_LED_STRIP
 #undef USE_DSHOT
 #undef USE_RANGEFINDER
 
+// CPU tweaking
+#undef USE_ITCM_RAM
+#undef USE_FAST_RAM
